@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC
+        "-//SPRING//DTD BEAN//EN"
+        "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+     <!-- 项目配置文件 -->
+	<import resource="classpath*:hibernate/dataSourceContext.xml"/>
+	<import resource= "classpath*:spring/daoContext.xml"/>
+	<import resource= "classpath*:spring/serviceContext.xml"/>
+	<import resource="classpath*:spring/adapterContext.xml"/>
+	<import resource="classpath*:spring/resourceContext.xml"/>
+	<import resource="classpath*:spring/actionContext.xml"/>
+	<import resource="classpath*:spring/aopContext.xml"/>
+	<import resource="classpath*:spring/configContext.xml"/>
+	<import resource="classpath*:spring/formatContext.xml"/>
+	<import resource="classpath*:spring/overrideContext.xml"/>
+	<import resource="classpath*:spring/validateContext.xml"/>
+	<import resource="classpath*:spring/sequenceContext.xml"/>
+	<!-- 测试引擎配置文件（必须） -->
+	<import resource="classpath*:test-workflow.xml"/>
+</beans>
